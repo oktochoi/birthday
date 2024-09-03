@@ -1,0 +1,28 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block poem%}
+<div class="poem">
+    <div class="line">
+        <h2 class="first">ㅇ:</h2>
+        <p>##</p>
+    </div>
+    <div class="line">
+        <h2 class="first">ㅇ:</h2>
+        <p>##</p>
+    </div>
+    <div class="line">
+        <h2 class="first">ㅇ:</h2>
+        <p>##</p>
+    </div>
+</div>
+{% endblock poem%}
+
+{% block section%}
+{%for Content in Contents%}
+<div class="section">
+    <img src={%get_static_prefix%}{{Content.img_path}} alt="카드 만들기 이미지">
+    <a href="#">{{Content.description}}</a>
+</div>
+{%endfor%}
+{% endblock section%}
