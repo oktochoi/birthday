@@ -22,7 +22,7 @@
 {%for Content in Contents%}
 <div class="section">
     <img src={%get_static_prefix%}{{Content.img_path}} alt="카드 만들기 이미지">
-    <a href="#">{{Content.description}}</a>
+    <a href="{{Content.site}}">{{Content.description}}</a>
 </div>
 {%endfor%}
 {% endblock section%}

@@ -8,8 +8,8 @@ def index(request):
     # Define the carousel slides
     carousel_slides = [
         {'image': 'party/images/main_page_background.jpg', 'alt_text': 'Slide 1'},
-        {'image': 'images/slide2.jpg', 'alt_text': 'Slide 2'},
-        {'image': 'images/slide3.jpg', 'alt_text': 'Slide 3'},
+        {'image': 'party/images/party2.jpg', 'alt_text': 'Slide 2'},
+        {'image': 'party/images/party3.jpg', 'alt_text': 'Slide 3'},
     ]
     
     # Create the context dictionary with both contents and carousel slides
